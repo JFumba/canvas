@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+      <script type="application/x-javascript">
+          function draw() {
+           var canvas = document.getElementById("canvas");
+           var ctx = canvas.getContext("2d");
+
+           //cannon
+           ctx.fillStyle = "rgb(17,105,60)";
+           ctx.fillRect (230, 280, 15, 20);
+           ctx.fillStyle = "rgb(15,87,51)";
+           ctx.fillRect (245, 280, 15, 20);
+           ctx.fillStyle = "rgb(12,70,40)";
+           ctx.fillRect (260, 280, 10, 20);
+
+           ctx.fillStyle = "rgb(220,250,7)";
+           ctx.fillRect (235, 300, 11, 10);
+           ctx.fillStyle = "rgb(255,230,5)";
+           ctx.fillRect (246, 300, 13, 10);
+           ctx.fillStyle = "rgb(140,130,5)";
+           ctx.fillRect (259, 300, 6, 10);
+
+           ctx.fillStyle ="rgb(17,105,60)";
+           ctx.fillRect (235, 310, 11, 80);
+           ctx.fillStyle = "rgb(15,87,51)";
+           ctx.fillRect (246, 310, 13, 80);
+           ctx.fillStyle = "rgb(12,70,40)";
+           ctx.fillRect (259, 310, 6, 80);
+
+           ctx.fillStyle = "rgb(220,250,7)";
+           ctx.fillRect (225, 390, 12, 10);
+           ctx.fillStyle = "rgb(255,230,5)";
+           ctx.fillRect (237, 390, 30, 10);
+           ctx.fillStyle = "rgb(140,130,5)";
+           ctx.fillRect (267, 390, 8, 10);
+
+           ctx.fillStyle = "rgb(17,105,60)";
+           ctx.fillRect (225, 400, 12, 100);
+           ctx.fillStyle = "rgb(15,87,51)";
+           ctx.fillRect (237, 400, 30, 100);
+           ctx.fillStyle = "rgb(12,70,40)";
+           ctx.fillRect (267, 400, 8, 100);
+
+           //viseur support
+           ctx.fillStyle = "rgb(5,25,15)";
+           ctx.fillRect (237, 440, 30, 20);
+
+          //viseur lunette
+           ctx.fillStyle = "rgb(15,100,45)";
+           ctx.fillRect (242, 420, 10, 50);
+           ctx.fillStyle = "rgb(11,66,38)";
+           ctx.fillRect (252, 420, 10, 50);
+
+
+           //ammo
+           
+
+}
+</script>
+</head>
+
+<body onload="draw()">
+<canvas id="canvas" width="500" height="500"></canvas>
+</body>
+
+</html>
