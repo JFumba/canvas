@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+      <script type="application/x-javascript">
+          function draw() {
+           var canvas = document.getElementById("canvas");
+           var ctx = canvas.getContext("2d");
+
+            //water
+            var grd=ctx.createLinearGradient(0,0,500,0);
+            grd.addColorStop(0,"rgb(3, 60, 60)");
+            grd.addColorStop(1,"rgb(8, 155, 155)");
+            ctx.fillStyle=grd;
+            ctx.fillRect(0,300,1000,230);
+
+
+            //light house
+            ctx.fillStyle = "rgb(13,206, 255)";
+            ctx.beginPath();
+             ctx.moveTo(810, 272);
+             ctx.lineTo(815, 230);
+             ctx.lineTo(830, 230);
+             ctx.lineTo(845, 280);
+             ctx.closePath();
+             ctx.fill();
+
+
+             ctx.fillStyle = "yellow";
+             ctx.fillRect (815, 215, 15, 15);
+
+             ctx.fillStyle = "black";
+             ctx.fillRect (815, 260, 10, 15);
+
+
+
+
+            //mainland
+            ctx.fillStyle ="rgb(142, 84, 52)";
+            ctx.beginPath();
+             ctx.moveTo(750, 300);
+             ctx.lineTo(775, 280);
+             ctx.lineTo(800, 270);
+             ctx.lineTo(1000, 280);
+             ctx.lineTo(1000, 300);
+             ctx.closePath();
+             ctx.fill();
+
+            //containers
+            ctx.fillStyle = "rgb(63, 120, 180)";
+            ctx.fillRect (200, 210, 60, 60);
+            ctx.fillStyle = "rgb(145, 0, 0)";
+            ctx.fillRect (280, 210, 60, 60);
+            ctx.fillStyle = "rgb(56, 95, 8)";
+            ctx.fillRect (360, 210, 60, 60);
+
+
+            //boat
+            ctx.fillStyle ="rgb(128, 128, 128)";
+            ctx.beginPath();
+             ctx.moveTo(100, 240);
+             ctx.lineTo(150, 240);
+             ctx.lineTo(150, 260);
+             ctx.lineTo(450, 260);
+             ctx.lineTo(450, 220);
+             ctx.lineTo(650,220);
+             ctx.lineTo(500,350);
+             ctx.lineTo(120,350);
+             ctx.lineTo(100, 240);
+             ctx.closePath();
+             ctx.fill();
+
+            //cabin
+             ctx.fillStyle ="rgb(63, 120, 113)";
+             ctx.beginPath();
+             ctx.moveTo(100, 240);
+             ctx.lineTo(100, 200);
+             ctx.lineTo(110, 200);
+             ctx.lineTo(100, 160);
+             ctx.lineTo(114, 160);
+             ctx.lineTo(114, 170);
+             ctx.lineTo(145, 170);
+             ctx.lineTo(145, 240);
+             ctx.closePath();
+             ctx.fill();
+
+             ctx.fillStyle = "rgb(0, 0, 0)";
+             ctx.fillRect (115, 180, 30, 10);
+
+
+
+
+
+          //flags
+           ctx.fillStyle = "rgb(0, 0, 0)";
+           ctx.fillRect (130, 270, 20, 50);
+           ctx.fillStyle = "rgb(255, 255, 0)";
+           ctx.fillRect (150, 270, 20, 50);
+           ctx.fillStyle = "rgb(255, 0, 0)";
+           ctx.fillRect (170, 270, 20, 50);
+          }
+
+          
+
+
+        </script>
+   </head>
+
+   <body onload="draw()">
+     <canvas id="canvas" width="1000" height="500"></canvas>
+   </body>
+
+  </html>
