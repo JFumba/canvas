@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Peacock</title>
+
+      <script type="application/x-javascript">
+          function draw() {
+           var canvas = document.getElementById("canvas");
+           var ctx = canvas.getContext("2d");
+
+
+           //head
+           ctx.fillStyle = "yellow";
+           ctx.beginPath();
+            ctx.moveTo(239, 90);
+            ctx.lineTo(228, 90);
+            ctx.lineTo(228, 82);
+            ctx.closePath();
+            ctx.fill();
+
+           ctx.fillStyle = "#9242FF";
+           ctx.beginPath();
+            ctx.moveTo(228, 90);
+            ctx.lineTo(228, 86);
+            ctx.lineTo(216, 84);
+            ctx.lineTo(210, 84);
+            ctx.lineTo(208, 89);
+            ctx.lineTo(215, 89);
+            ctx.lineTo(218, 93);
+            ctx.closePath();
+            ctx.fill();
+
+
+           ctx.fillStyle = "blue";
+           ctx.beginPath();
+            ctx.moveTo(228, 86);
+            ctx.lineTo(228, 83);
+            ctx.lineTo(223,85);
+            ctx.lineTo(223,83);
+            ctx.closePath();
+            ctx.fill();
+
+          }
+
+
+
+
+        </script>
+   </head>
+
+   <body onload="draw()">
+     <canvas id="canvas" width="1000" height="500"></canvas>
+   </body>
+
+  </html>
